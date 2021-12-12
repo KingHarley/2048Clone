@@ -1,0 +1,13 @@
+﻿<Project>
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>_2048Clone</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <BaseOutputPath>build\bin\</BaseOutputPath>
+    <BaseIntermediateOutputPath>build\obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+	<Import Sdk="Microsoft.Net.Sdk" Project="Sdk.props"/>
+	<Import Sdk="Microsoft.Net.Sdk" Project="Sdk.targets"/>
+</Project>

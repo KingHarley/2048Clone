@@ -8,6 +8,6 @@
     <BaseOutputPath>build\bin\</BaseOutputPath>
     <BaseIntermediateOutputPath>build\obj\</BaseIntermediateOutputPath>
   </PropertyGroup>
-	<Import Sdk="Microsoft.Net.Sdk" Project="Sdk.props"/>
-	<Import Sdk="Microsoft.Net.Sdk" Project="Sdk.targets"/>
+	<Import Sdk="Microsoft.Net.Sdk" Project="Sdk.props" />
+	<Import Sdk="Microsoft.Net.Sdk" Project="Sdk.targets" />
 </Project>

@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using _2048Clone.Engine;
+
+Engine theEngine = new Engine();
+
+theEngine.Start();

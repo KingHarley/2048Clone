@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2048Clone.Engine.Game
+namespace _2048Clone
 {
     public static class GameLogic
     {

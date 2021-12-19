@@ -1,5 +1,5 @@
-﻿using _2048Clone.Engine;
+﻿using _2048Clone;
 
-Engine theEngine = new Engine();
+Engine engine = new Engine();
 
-theEngine.Start();
+engine.Start();

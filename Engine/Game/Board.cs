@@ -86,7 +86,7 @@ namespace _2048Clone
             {
                 for(int col = 0; col < SIZE; col++)
                 {
-                    Console.Write(Fields[row, col].Value);
+                    Console.Write("  " + Fields[row, col].Value + "  ");
                 }
                 Console.Write("\n");
             }

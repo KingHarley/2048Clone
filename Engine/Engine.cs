@@ -1,20 +1,19 @@
-﻿using _2048Clone.Engine.Game;
-using System;
+﻿using System;
 
-namespace _2048Clone.Engine
+namespace _2048Clone
 {
     public class Engine
     {
-        public Game.Game theGame;
+        public Game myGame;
 
         public Engine()
         {
-            theGame = new Game.Game();
+            myGame = new Game();
         }
 
         public void Start()
         {
-            theGame.Start();
+            myGame.Start();
         }
     }
 }

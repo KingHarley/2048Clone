@@ -4,21 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2048Clone.Engine.Game
+namespace _2048Clone
 {
     public class Board
     {
-        int[,] boardValues = new int[4,4];
+        int[,] BoardValues = new int[4,4];
         public Board()
         {
             
         }
-
-        public void Start()
-        {
-            RenderBoard();
-        }
-
         public void RenderBoard()
         {
             Console.WriteLine("Rendering the Board");
@@ -27,7 +21,7 @@ namespace _2048Clone.Engine.Game
             {
                 for(int col = 0; col < 4; col++)
                 {
-                    Console.Write(boardValues[row, col]);
+                    Console.Write(BoardValues[row, col]);
                 }
                 Console.Write("\n");
             }

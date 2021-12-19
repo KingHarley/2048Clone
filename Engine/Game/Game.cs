@@ -24,15 +24,28 @@ namespace _2048Clone
             this.Play();
         }
 
+        private bool IsValidInput(string input)
+        {
+            if (string.Equals(input, "down") || string.Equals(input, "up") || string.Equals(input, "left") || string.Equals(input, "right"))
+                return true;
+            return false;
+        }
+
         private void Play()
         {
             TheBoard.RenderBoard();
             while(IsPlaying)
             {
                 //Check for user input from the player.
-                var input = Console.ReadLine();
-                //Make the player's move
-                //Spawn another 2 on the board
+                var input = Console.ReadLine().ToLower();
+                while(!IsValidInput(input))
+                {
+                    Console.WriteLine("Invalid Input");
+                    Console.WriteLine("Valid Inputs: down, up, left, right");
+                    input = Console.ReadLine().ToLower();
+                }
+
+                TheBoard.MakeMove(input);
                 TheBoard.SpawnField();
                 TheBoard.RenderBoard();
                 IsPlaying = TheBoard.IsOpenField();

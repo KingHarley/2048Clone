@@ -26,11 +26,16 @@ namespace _2048Clone
 
         private void Play()
         {
+            TheBoard.RenderBoard();
             while(IsPlaying)
             {
                 //Check for user input from the player.
+                var input = Console.ReadLine();
                 //Make the player's move
                 //Spawn another 2 on the board
+                TheBoard.SpawnField();
+                TheBoard.RenderBoard();
+                IsPlaying = TheBoard.IsOpenField();
                 //Check if the game is over (i.e. No available spaces)
                 //Calculate the total score on the board
             }
